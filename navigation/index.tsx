@@ -20,6 +20,7 @@ import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../typ
 import LinkingConfiguration from './LinkingConfiguration';
 import {Octicons, MaterialCommunityIcons} from '@expo/vector-icons';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import ChatsScreen from '../screens/ChatsScreen';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -113,7 +114,7 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Chats"
-        component={TabOneScreen}        
+        component={ChatsScreen}        
         options={{
           title: 'Chats'
         }}
